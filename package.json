@@ -8,7 +8,8 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "jointjs": "2.1.2"
+    "jointjs": "2.1.2",
+    "js-yaml": "3.12.0"
   },
   "devDependencies": {
     "parcel-bundler": "^1.6.1"
