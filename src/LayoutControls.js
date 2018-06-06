@@ -48,7 +48,7 @@ var LayoutControls = joint.mvc.View.extend({
     return {
       setVertices: true,
       setLabels: true,
-      ranker: 'longer-path',
+      ranker: 'network-simplex',
       rankDir: 'LR',
       align: 'UL',
       rankSep: 50,

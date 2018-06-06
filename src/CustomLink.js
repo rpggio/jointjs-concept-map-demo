@@ -37,7 +37,7 @@ var Link = joint.dia.Link.define(
             textAnchor: "middle",
             refY: 5,
             refY2: "-50%",
-            fontSize: 20,
+            fontSize: 16,
             cursor: "pointer"
           },
           rect: {

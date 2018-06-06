@@ -1,16 +1,14 @@
-title: Catalog Services ecosystem relevant to CNV
+title: Catalog Services ecosystem relevant to C
 defaultElementType: 'System'
 elements:
   -
     name: Vendor Services
-    desc: Ingests vendor specific formats and normalizes to Nk product definitions
+    desc: Ingests vendor specific formats and normalizes to product definitions
     relations:
       - Sources [Accounting]
   -
     name: Catalog Services
     desc: Defines products (vendor-style-color), its available SKUs (vendor-style-color-size)
-    relations:
-      - Creates [Catalog Services]
   -
     name: 3rd Party Data
     desc: Other systems that need to be in the Catalog
@@ -20,16 +18,16 @@ elements:
     name: Accounting Services
     desc: SAPR captures transaction and handles account functions
   -
-    name: Photo Studio (Icon)
+    name: Studio
     desc: The photography studio and workflow process
     relations:
-      - Send images [Digital Asset Management]
+      - Send images [Dig Asset Management]
   -
-    name: Digital Asset Management
+    name: Dig Asset Management
     desc: Delivery of web read images
   -
     name: Availability
-    desc: Identifies if we have the capacity and inventory to proise a product
+    desc: Identifies if we have the capacity and inventory to sell a product
     relations:
       - Queries [Catalog Services]
   -
@@ -47,9 +45,9 @@ elements:
     desc: Captures customizations for a particular product
     relations:
       - Queries (to-be) [Catalog Services]
-      - Queries (as-is) Merchandising Services
+      - Queries (as-is) [Merchandising Services]
   -
-    name: Elite Client Services
-    desc: Allows Athletes with Nk contracts to buy products against their contract.
+    name: Elt Client Services
+    desc: Allows A with contracts to buy products against their contract.
     relations:
       - Reports [Accounting Services]

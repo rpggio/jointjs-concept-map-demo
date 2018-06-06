@@ -1,13 +1,10 @@
 import joint from 'jointjs';
 import 'jointjs/dist/joint.css';
-import yaml from 'js-yaml';
 
 import LayoutControls from './LayoutControls';
-import diagramYml from '../data/diagram.yml';
 
 import alphabetGraph from './AlphabetGraph';
-
-const diagram = yaml.safeLoad(diagramYml);
+import diagramGraph from './DiagramGraph';
 
 const appElement = document.getElementById("app");
 
@@ -18,7 +15,7 @@ var controls = new LayoutControls({
       return cellView.model.isElement();
     }
   }),
-    cells: alphabetGraph
+  cells: diagramGraph
 });
 
 controls.layout();

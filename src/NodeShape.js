@@ -2,7 +2,7 @@ import joint from 'jointjs';
 
 var Shape = joint.dia.Element.define('demo.Shape', {
   size: {
-    width: 100,
+    width: 200,
     height: 50
   },
   attrs: {
@@ -20,7 +20,7 @@ var Shape = joint.dia.Element.define('demo.Shape', {
       refY: '50%',
       yAlignment: 'middle',
       xAlignment: 'middle',
-      fontSize: 30
+      fontSize: 20
     }
   }
 }, {
