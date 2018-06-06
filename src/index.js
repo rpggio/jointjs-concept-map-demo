@@ -5,6 +5,8 @@ import yaml from 'js-yaml';
 import LayoutControls from './LayoutControls';
 import diagramYml from '../data/diagram.yml';
 
+import alphabetGraph from './AlphabetGraph';
+
 const diagram = yaml.safeLoad(diagramYml);
 
 const appElement = document.getElementById("app");
@@ -16,17 +18,7 @@ var controls = new LayoutControls({
       return cellView.model.isElement();
     }
   }),
-  adjacencyList: {
-    a: ['b', 'c', 'd'],
-    b: ['d', 'e'],
-    c: [],
-    d: [],
-    e: ['e'],
-    f: [],
-    g: ['b', 'i'],
-    h: ['f'],
-    i: ['f', 'h']
-  }
+    cells: alphabetGraph
 });
 
 controls.layout();
